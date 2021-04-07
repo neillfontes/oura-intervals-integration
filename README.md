@@ -20,13 +20,15 @@ Please find below the table of correlation between the two platforms:
 
 ### Pre-requirements
 
-This application is written in Java, and requires it to be installed on your Operational System of choice. 
-Please find more details [here](https://www.java.com/en/download/help/index_installing.html).
+This application is written in Java, and requires Java 11 to be installed on your Operational System of choice. 
+Please find more details [here](https://adoptopenjdk.net/releases.html).
+
+- [Windows](https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x64_windows_hotspot_11.0.10_9.msi)
+- [MacOS](https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x64_mac_hotspot_11.0.10_9.pkg)
 
 ### Download 
 
-Please download the latest version of this application (v1.0.0) [here](release-1.0.0.zip
-). 
+Please download the latest version of this application (v1.0.0) [here](https://github.com/neillfontes/oura-intervals-integration/releases/download/v1.0.0/release-1.0.0.zip). 
 
 ### Generate Application Tokens
 
@@ -48,7 +50,7 @@ setting up the integration.
 
 Extract the zip file in a folder of your choice. 
 
-Open the file `application.properties` and edit the following lines replacing with the values from the previous steps.
+Open the file `application.properties` and edit the following lines replacing with the values obtained from the previous steps.
 
 ```
 oura.accessToken=[OURA_ACCESS_TOKEN]
@@ -61,9 +63,11 @@ entries in this file.
 
 ### Running the application
 
-If you are on Windows, you can use the shortcut provided in `oura_intervals.bat` file. 
+If you are on Windows, you can use the shortcut provided in `run-app.bat` file. 
 
-If you are on MacOS or *nix-based OS you can use `java -jar oura-intervals-integration.jar`.
+If you are on MacOS or *nix-based OS you can use `java -jar oura-intervals-integration.jar` or the `run-app.sh` file. 
+
+The application runs in the background, so it doesn't have any user interface. 
 
 ### Further details
 
@@ -78,4 +82,4 @@ detail and well keep history of the past executions.
 
 ### Reporting issues
 
-If you have any issue or suggestion to report, you can do so on the [Github page](https://github.com/neillfontes/oura-intervals-integration/issues).
+If you have any issue or suggestion to report, you can send me an e-mail: `neillfontes [at] gmail [dot] com` 
